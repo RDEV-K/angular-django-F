@@ -1,0 +1,24 @@
+<div class="w-[100%] bg-blue-400 h-[350px] p-[10px]">
+    <div class="flex justify-start items-end">
+        <p class="text-white text-2xl">Members</p>
+        <a href="" class="text-white text-md ms-[10px]">Create New Users</a>
+    </div>
+    <div class="w-[100%]">
+        <table>
+            <thead>
+                <th>name</th>
+                <th>description</th>
+                <th>status</th>
+                <th>action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let member of members">
+                    <td>{{ member.name }}</td>
+                    <td>{{ member.email }}</td>
+                    <td>{{ member.status }}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
